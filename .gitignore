@@ -1,0 +1,26 @@
+# Rust build artifacts & binaries
+/target/
+**/*.rs.bk
+*.pdb
+
+# Compiled binaries and libraries
+*.exe
+*.dll
+*.so
+*.dylib
+*.wasm
+*.bin
+*.o
+*.a
+*.rlib
+*.rmeta
+*.d
+
+# macOS metadata
+.DS_Store
+**/.DS_Store
+
+# Editor / Agent local config
+.antigravity/
+.idea/
+.vscode/

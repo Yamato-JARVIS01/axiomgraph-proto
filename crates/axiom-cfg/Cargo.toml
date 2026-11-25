@@ -1,0 +1,12 @@
+[package]
+name = "axiom-cfg"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+axiom-core = { path = "../axiom-core" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+reqwest.workspace = true
+tokio.workspace = true

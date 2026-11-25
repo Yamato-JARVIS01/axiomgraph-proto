@@ -1,0 +1,22 @@
+[package]
+name = "axiom-data"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+axiom-core = { path = "../axiom-core" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+tokio.workspace = true
+arrow.workspace = true
+arrow-array.workspace = true
+arrow-schema.workspace = true
+arrow-ipc.workspace = true
+datafusion.workspace = true
+lbug.workspace = true
+tempfile = "3.15"
+
+[dev-dependencies]
+axiom-pcfg = { path = "../axiom-pcfg" }

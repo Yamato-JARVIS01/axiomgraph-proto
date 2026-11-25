@@ -1,0 +1,5 @@
+order_id,part_number,quantity,target_rev,status
+PO-2026-001,PRT-1001,10,Rev.C,OPEN
+PO-2026-002,PRT-1002,5,Rev.B,OPEN
+PO-2026-003,PRT-1003,3,Rev.A,OPEN
+PO-2026-004,PRT-2001,20,Rev.A,OPEN

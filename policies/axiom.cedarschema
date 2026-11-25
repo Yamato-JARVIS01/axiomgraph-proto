@@ -1,0 +1,37 @@
+namespace AxiomGraph {
+    entity User;
+    entity Agent;
+    entity Resource {
+        resource_type: String,
+    };
+
+    type WriteBackContext = {
+        approval_status: String,
+        dry_run_passed: Bool,
+        action_kind: String,
+    };
+
+    action "CreatePurchaseOrderDraft" appliesTo {
+        principal: [User, Agent],
+        resource: [Resource],
+        context: WriteBackContext,
+    };
+
+    action "CreateBomRevisionRequest" appliesTo {
+        principal: [User, Agent],
+        resource: [Resource],
+        context: WriteBackContext,
+    };
+
+    action "ApproveAction" appliesTo {
+        principal: [User],
+        resource: [Resource],
+        context: WriteBackContext,
+    };
+
+    action "UpdateMapping" appliesTo {
+        principal: [User, Agent],
+        resource: [Resource],
+        context: WriteBackContext,
+    };
+}

@@ -1,0 +1,52 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/axiom-core",
+    "crates/axiom-pcfg",
+    "crates/axiom-data",
+    "crates/axiom-authz",
+    "crates/axiom-cfg",
+    "crates/axiom-wasm-worker",
+    "crates/axiom-action",
+    "crates/axiom-cli",
+    "apps/omokane-ui",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+anyhow = "1.0"
+tokio = { version = "1.44", features = ["full"] }
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1.16", features = ["v4", "serde"] }
+sha2 = "0.10"
+hex = "0.4"
+regex = "1.11"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Data Core (Arrow 55 aligned)
+arrow = { version = "55.2.0", features = ["ffi", "prettyprint"] }
+arrow-array = "55.2.0"
+arrow-schema = "55.2.0"
+arrow-ipc = "55.2.0"
+datafusion = "49.0.2"
+lbug = { version = "0.22.3", features = ["arrow"] }
+
+# Authz (Cedar + SymCC)
+cedar-policy = "=4.14.1"
+cedar-policy-symcc = "0.8.1"
+
+# Wasmtime & DB & HTTP
+wasmtime = "42.0.2"
+rusqlite = { version = "0.34", features = ["bundled"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+axum = "0.8.9"
+tower-http = { version = "0.6", features = ["cors", "fs"] }
+clap = { version = "4.5", features = ["derive"] }

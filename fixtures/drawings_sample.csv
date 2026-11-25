@@ -1,0 +1,8 @@
+drawing_id,title,latest_rev,status
+DWG-1001,精密サーボモータ A1 組立図,Rev.C,ACTIVE
+DWG-1002,減速機ユニット G5 図面,Rev.D,ACTIVE
+DWG-1003,旧型エンコーダ E0 図面,Rev.A,OBSOLETE
+DWG-2001,ステータコア S10 図面,Rev.A,ACTIVE
+DWG-2002,ロータシャフト R20 図面,Rev.B,ACTIVE
+DWG-3001,循環テスト部品B 図面,Rev.A,ACTIVE
+DWG-3002,循環テスト部品A 図面,Rev.A,ACTIVE

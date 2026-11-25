@@ -1,0 +1,14 @@
+"製造部 BOM一覧 (2026年11月改訂)",,,,,,
+"承認印: 課長[済] 担当[田中]",,,,,,
+,,,,,,
+"親品番","品目CD","部品名称","員数","図番","版数","備考"
+"Assy No.","P/N","Part Name","Qty","DWG No.","Rev","Status / Note"
+"ASM-9000","PRT-1001","精密サーボモータ A1","2","DWG-1001","Rev.C","ACTIVE"
+"ASM-9000","PRT-1002","減速機ユニット G5","1","DWG-1002","Rev.B","ACTIVE"
+"ASM-9000","","（結合セル空白行）","","","",""
+"ASM-9000","PRT-1003","旧型エンコーダ E0","1","DWG-1003","Rev.A","OBSOLETE"
+"PRT-1001","PRT-2001","ステータコア S10","1","DWG-2001","Rev.A","ACTIVE"
+"PRT-1001","PRT-2002","ロータシャフト R20","1","DWG-2002","Rev.B","ACTIVE"
+"PRT-1002","PRT-MISSING-999","未登録ベアリング","4","DWG-9999","Rev.A","ACTIVE"
+"PRT-CYC-A","PRT-CYC-B","循環テスト部品B","1","DWG-3001","Rev.A","ACTIVE"
+"PRT-CYC-B","PRT-CYC-A","循環テスト部品A","1","DWG-3002","Rev.A","ACTIVE"
