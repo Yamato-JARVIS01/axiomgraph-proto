@@ -24,3 +24,15 @@
 .antigravity/
 .idea/
 .vscode/
+
+# Keep local-only (excluded from GitHub to keep remote lightweight)
+Cargo.lock
+/crates/axiom-pcfg/
+/crates/axiom-cfg/
+/crates/axiom-authz/
+/crates/axiom-action/
+/crates/axiom-wasm-worker/
+/crates/axiom-cli/
+/apps/
+/nix/
+
